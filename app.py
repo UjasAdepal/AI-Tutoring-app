@@ -7,10 +7,15 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 from dotenv import load_dotenv
 
+from langchain_community.document_loaders import CSVLoader
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
+
+
 load_dotenv()
 
 # 1. Vectorise the sales response csv data
-loader = CSVLoader(file_path="temp2.csv")
+loader = CSVLoader(file_path="temp2.csv",encoding="detected_encoding")
 documents = loader.load()
 
 embeddings = OpenAIEmbeddings()
