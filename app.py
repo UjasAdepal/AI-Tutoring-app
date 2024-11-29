@@ -15,7 +15,7 @@ from langchain_community.embeddings import OpenAIEmbeddings
 load_dotenv()
 
 # 1. Vectorise the sales response csv data
-loader = CSVLoader(file_path="temp2.csv",encoding="detected_encoding")
+loader = CSVLoader(file_path="temp2.csv",, encoding="utf-8")
 documents = loader.load()
 
 embeddings = OpenAIEmbeddings()
