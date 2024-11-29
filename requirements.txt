@@ -5,3 +5,4 @@ langchain-text-splitters==0.3.2
 streamlit==1.39.0
 python-dotenv
 setuptools>=65.0.0
+openai==1.54.5
