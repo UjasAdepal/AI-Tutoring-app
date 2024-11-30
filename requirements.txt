@@ -1,8 +1,10 @@
 langchain==0.3.7
-langchain-community
 langchain-core==0.3.15
 langchain-text-splitters==0.3.2
-streamlit==1.39.0
 python-dotenv
 setuptools>=65.0.0
-openai==1.54.5
+streamlit==1.25.0
+langchain-community==0.2.0
+openai==0.28.0
+pydantic==1.10.9
+faiss-cpu==1.7.4
